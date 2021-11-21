@@ -6,7 +6,12 @@ Każdy proces ma inny przedział <a,b> który jest losowany. Każdy proces ma sw
 
 Opis kodu:
 
-main tu użytkownik jest pytany o liczbę procesów a następnie w pętli for dla każdego procesu sprawdzany jest czy fork() jest równe 0 oraz ustawiane jest zairono oraz losowany zakres przedziału i n. Następnie wywoływane sąfunkcje liczące wartość całki używając odpowiednich metod.
+Import potrzebnych bibliotek
+
+    #include <stdio.h>
+    #include <stdlib.h>
+
+main tu użytkownik jest pytany o liczbę procesów a następnie w pętli for dla każdego procesu sprawdzany jest czy fork() jest równe 0 oraz ustawiane jest zairono oraz losowany zakres przedziału i n. Następnie wywoływane są funkcje liczące wartość całki używając odpowiednich metod i wyświetlając je z odpowiednimi komunikatami.
 
     int main() {
       int liczbaProcesow, a, b, n;
